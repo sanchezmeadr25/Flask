@@ -1,0 +1,174 @@
+/* ------------------------------
+   ESTILOS GENERALES
+--------------------------------*/
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #F4F6FA;
+    margin: 0;
+    padding: 0;
+    color: #1F2A48;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+/* ------------------------------
+   HEADER
+--------------------------------*/
+.header {
+    background: #3A7AFE;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ------------------------------
+   BOTONES
+--------------------------------*/
+.btn-primary {
+    background: #3A7AFE;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #1F2A48;
+}
+
+.btn-secondary {
+    background: #1F2A48;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #3A7AFE;
+}
+
+/* ------------------------------
+   TARJETAS DE TAREAS
+--------------------------------*/
+.task-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.task-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.task-card h3 {
+    margin-top: 0;
+}
+
+/* ------------------------------
+   ESTADOS
+--------------------------------*/
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.pendiente {
+    background: #F44336;
+}
+
+.en\ progreso {
+    background: #FFC107;
+}
+
+.completada {
+    background: #4CAF50;
+}
+
+/* ------------------------------
+   FORMULARIOS
+--------------------------------*/
+.form-card, .form-update {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* ------------------------------
+   DETALLE
+--------------------------------*/
+.detail-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+
+.btn-danger {
+    background: #F44336;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-danger:hover {
+    background: #C62828;
+}
+
+
+.btn-danger {
+    background: #3678f4;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-danger:hover {
+    background: #C62828;
+}
+

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="title">Crear nueva tarea</h2>
+
+<form method="POST" class="form-card">
+
+    <label>Título</label>
+    <input type="text" name="title" required>
+
+    <label>Descripción</label>
+    <textarea name="description" required></textarea>
+
+    <button type="submit" class="btn-primary">Crear tarea</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="title">Listado de tareas</h2>
+<form method="POST" action="/delete_all" onsubmit="return confirm('¿Seguro que quieres eliminar TODAS las tareas?');">
+    <button class="btn-danger">Eliminar todas las tareas</button>
+</form>
+
+
+<div class="task-list">
+    {% for task in tasks %}
+    <div class="task-card">
+        <h3>{{ task.title }}</h3>
+        <p class="status {{ task.status|lower }}">{{ task.status }}</p>
+        <a href="/task/{{ task.id }}" class="btn-secondary">Ver detalle</a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

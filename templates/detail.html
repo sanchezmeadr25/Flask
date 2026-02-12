@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="detail-card">
+    
+    <form method="POST" action="/task/{{ task.id }}/delete"
+        onsubmit="return confirm('¿Seguro que quieres eliminar esta tarea?');">
+        <button class="btn-danger">Eliminar tarea</button>
+    </form>
+
+    <h2>{{ task.title }}</h2>
+
+    <p><strong>Descripción:</strong> {{ task.description }}</p>
+    <p><strong>Estado actual:</strong>
+        <span class="status {{ task.status|lower }}">{{ task.status }}</span>
+    </p>
+    <p><strong>Creado:</strong> {{ task.created_at }}</p>
+
+    <form method="POST" action="/task/{{ task.id }}/update" class="form-update">
+        <label>Cambiar estado:</label>
+        <select name="status">
+            <option>Pendiente</option>
+            <option>En progreso</option>
+            <option>Completada</option>
+        </select>
+
+        <button type="submit" class="btn-primary">Actualizar</button>
+    </form>
+
+</div>
+{% endblock %}

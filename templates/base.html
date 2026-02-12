@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Gestor de Tareas</h1>
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/create" class="btn-primary">Nueva tarea</a>
+    </nav>
+</header>
+
+<main class="container">
+    {% block content %}{% endblock %}
+</main>
+
+</body>
+</html>
